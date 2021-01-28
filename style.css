@@ -1,0 +1,336 @@
+body
+{
+    margin: 0;
+    font-family: inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #FFFFFF;
+}
+
+#toggleCookieBar
+{
+    display: none;
+}
+
+.cookieBar
+{
+    width: 100%;
+    background-color: #000000;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookieBarButton
+{
+    background-color: #FFFFFF;
+    margin: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: block;
+}
+
+#toggleCookieBar:checked + .cookieBar
+{
+    display: flex;
+}
+
+.labelCookieBarButton
+{
+    display: block;
+    cursor: pointer;
+}
+
+.fullScreenMenu
+{
+    display: none;
+}
+
+.fullMenu
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fullMenu ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.fullMenu li
+{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 16%;
+    margin-top: 16%;
+}
+
+.fullMenu li a
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.25rem
+}
+
+.fullMenu li a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+
+.frame
+{
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.navbar
+{
+    display: flex;
+    padding-bottom: 1%;
+}
+
+.menu
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar li
+{
+    display: inline-block;
+}
+
+.navbar li a
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.125rem;
+    margin: 16px;
+}
+
+.navbar li a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+
+
+label
+{
+    display: none;
+}
+
+#toggle
+{
+    display: none;
+}
+
+.titleA
+{
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.textA
+{
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.textB
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.textC
+{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin: 24px;
+}
+
+.textD
+{
+    font-size: 1rem;
+    color: #000000;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.boxA
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.boxB
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxB img
+{
+    width: 100%;
+}
+
+.boxC
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer
+{
+	width: 100%;
+}
+
+.line
+{
+    width: 100%;
+    height: 1px;
+    background: #000000;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.eskisehir
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.eskisehir img
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.badge
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.badge img
+{
+    margin-right: 12px;
+}
+
+
+@media(max-width: 1200px)
+{
+    
+    .fullScreenMenu {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background: #FFFFFF;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+
+    label
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navbar li a
+    {
+        display: block;
+    }
+
+    #toggle:checked + .fullScreenMenu
+    {
+        display: block;
+    }
+
+    .hamburgerMenu
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 800px)
+{
+    .frame
+    {
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .box
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .boxA
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .boxB
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+    }
+
+}
